@@ -1,0 +1,28 @@
+{
+    "backgrounds": [
+        {
+            "index": 3,
+            "min_depth": 5000,
+            "frame_name": "Deep Cave BG.png",
+            "tile_pixel": 64
+        },
+        {
+            "index": 2,
+            "min_depth": 30,
+            "frame_name": "Cave BG.png",
+            "tile_pixel": 64
+        },
+        {
+            "index": 1,
+            "min_depth": 11,
+            "frame_name": "Dirt BG.png",
+            "tile_pixel": 64
+        },
+        {
+            "index": 0,
+            "min_depth": 0,
+            "frame_name": "Overground BG.png",
+            "tile_pixel": 64
+        }
+    ]
+}

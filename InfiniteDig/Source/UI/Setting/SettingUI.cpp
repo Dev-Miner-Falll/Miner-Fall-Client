@@ -1,6 +1,7 @@
 #include "SettingUI.h"
 #include "axmol/ui/UIButton.h"
 #include "Utils/Manager/SoundManager.h"
+#include "Service/ServiceLocator.h"
 
 using namespace ax::ui;
 USING_NS_AX;
@@ -387,5 +388,6 @@ void SettingUI::OnSFXVolumeChanged(Object* sender, ax::ui::Slider::EventType typ
 
 void SettingUI::OnClickedExit()
 {
+    ServiceLocator::Save();
     _director->end();
 }

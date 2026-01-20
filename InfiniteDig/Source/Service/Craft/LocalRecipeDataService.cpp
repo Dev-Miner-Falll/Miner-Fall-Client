@@ -33,19 +33,13 @@ namespace Service
         using namespace std;
         using namespace rapidjson;
 
-        string file_path = ax::FileUtils::getInstance()->getWritablePath() + "RecipeData.json";
+        string file_path = "Data/RecipeData.json";
         string json_str  = ax::FileUtils::getInstance()->getStringFromFile(file_path);
-
-        AXASSERT(!json_str.empty(), "RecipeData.json 로드에 실패했습니다.");
 
         Document doc;
         doc.Parse(json_str.c_str());
 
-        AXASSERT(doc.IsObject(), "RecipeData.json의 형식이 잘못되었습니다.");
-        AXASSERT(doc.HasMember("recipes"), "RecipeData.json의 형식이 잘못되었습니다.");
-
         const Value& recipes = doc["recipes"];
-        AXASSERT(recipes.IsArray(), "recipes는 배열이 아닙니다.");
 
         m_recipe_vector.clear();
         for (const auto& recipe : recipes.GetArray())

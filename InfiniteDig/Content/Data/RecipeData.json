@@ -1,0 +1,64 @@
+{
+    "recipes": [
+        {
+            "product_code": 101,
+            "product_count": 1,
+            "ingredients": [
+                {
+                    "ingredient_code": 1,
+                    "ingredient_count": 4
+                }
+            ]
+        },
+        {
+            "product_code": 102,
+            "product_count": 1,
+            "ingredients": [
+                {
+                    "ingredient_code": 2,
+                    "ingredient_count": 4
+                }
+            ]
+        },
+        {
+            "product_code": 103,
+            "product_count": 1,
+            "ingredients": [
+                {
+                    "ingredient_code": 3,
+                    "ingredient_count": 4
+                }
+            ]
+        },
+        {
+            "product_code": 201,
+            "product_count": 1,
+            "ingredients": [
+                {
+                    "ingredient_code": 4,
+                    "ingredient_count": 2
+                }
+            ]
+        },
+        {
+            "product_code": 202,
+            "product_count": 1,
+            "ingredients": [
+                {
+                    "ingredient_code": 5,
+                    "ingredient_count": 2
+                }
+            ]
+        },
+        {
+            "product_code": 203,
+            "product_count": 1,
+            "ingredients": [
+                {
+                    "ingredient_code": 6,
+                    "ingredient_count": 2
+                }
+            ]
+        }
+    ]   
+}

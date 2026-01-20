@@ -65,6 +65,8 @@ if(APPLE)
   ax_mark_multi_resources(common_content_files RES_TO "Resources" FOLDERS ${content_folder})
 elseif(WINDOWS)
   ax_mark_multi_resources(common_content_files RES_TO "Content" FOLDERS ${content_folder})
+elseif(ANDROID)
+  ax_mark_multi_resources(common_content_files RES_TO "" FOLDERS "${CMAKE_CURRENT_SOURCE_DIR}/Content")
 endif()
 
 include(AXGameSourceSetup)

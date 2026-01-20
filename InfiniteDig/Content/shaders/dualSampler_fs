@@ -1,0 +1,26 @@
+#version 300 es
+precision mediump float;
+precision highp int;
+
+uniform highp sampler2DArray u_tex0;
+
+in highp vec2 v_texCoord;
+layout(location = 0) out highp vec4 FragColor;
+in highp vec4 v_color;
+
+void main()
+{
+    highp vec3 uv0 = vec3(v_texCoord, 0.0);
+    highp vec3 uv1 = vec3(v_texCoord, 1.0);
+    highp vec3 rgb = texture(u_tex0, uv0).xyz;
+    highp float a = texture(u_tex0, uv1).x;
+    highp vec4 texColor = vec4(rgb, a);
+    highp float _52 = texColor.w;
+    highp vec4 _53 = texColor;
+    highp vec3 _55 = _53.xyz * _52;
+    texColor.x = _55.x;
+    texColor.y = _55.y;
+    texColor.z = _55.z;
+    FragColor = v_color * texColor;
+}
+

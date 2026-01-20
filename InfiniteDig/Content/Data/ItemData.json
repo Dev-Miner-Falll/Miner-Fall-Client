@@ -1,0 +1,116 @@
+{
+    "items": [
+        {
+            "item_code": 1,
+            "item_name": "석탄 파편",
+            "frame_name": "Coal Stuff.png",
+            "item_type": 0,
+            "item_cool": -1
+        },
+        {
+            "item_code": 2,
+            "item_name": "철 파편",
+            "frame_name": "Iron Stuff.png",
+            "item_type": 0,
+            "item_cool": -1
+        },
+        {
+            "item_code": 3,
+            "item_name": "금 파편",
+            "frame_name": "Gold Stuff.png",
+            "item_type": 0,
+            "item_cool": -1
+        },
+        {
+            "item_code": 4,
+            "item_name": "에메랄드 원석",
+            "frame_name": "Emerald Stuff.png",
+            "item_type": 0,
+            "item_cool": -1
+        },
+        {
+            "item_code": 5,
+            "item_name": "자수정 원석",
+            "frame_name": "Amethyst Stuff.png",
+            "item_type": 0,
+            "item_cool": -1
+        },
+        {
+            "item_code": 6,
+            "item_name": "다이아몬드 원석",
+            "frame_name": "Diamond Stuff.png",
+            "item_type": 0,
+            "item_cool": -1
+        },
+        {
+            "item_code": 101,
+            "item_name": "석탄 뭉치",
+            "frame_name": "Coal Refine.png",
+            "item_type": 1,
+            "item_cool": -1
+        },
+        {
+            "item_code": 102,
+            "item_name": "철 주괴",
+            "frame_name": "Iron Refine.png",
+            "item_type": 1,
+            "item_cool": -1
+        },
+        {
+            "item_code": 103,
+            "item_name": "금 주괴",
+            "frame_name": "Gold Refine.png",
+            "item_type": 1,
+            "item_cool": -1
+        },
+        {
+            "item_code": 201,
+            "item_name": "에메랄드",
+            "frame_name": "Emerald Refine.png",
+            "item_type": 1,
+            "item_cool": -1
+        },
+        {
+            "item_code": 202,
+            "item_name": "자수정",
+            "frame_name": "Amethyst Refine.png",
+            "item_type": 1,
+            "item_cool": -1
+        },
+        {
+            "item_code": 203,
+            "item_name": "다이아몬드",
+            "frame_name": "Diamond Refine.png",
+            "item_type": 1,
+            "item_cool": -1
+        },
+        {
+            "item_code": 301,
+            "item_name": "소형 다이너마이트",
+            "frame_name": "Small Dynamite.png",
+            "item_type": 2,
+            "item_cool": 5
+        },
+        {
+            "item_code": 302,
+            "item_name": "중형 다이너마이트",
+            "frame_name": "Medium Dynamite.png",
+            "item_type": 2,
+            "item_cool": 10
+        },
+        {
+            "item_code": 303,
+            "item_name": "중형 채굴용 폭탄",
+            "frame_name": "Medium Bomb.png",
+            "item_type": 2,
+            "item_cool": 10
+        },
+        {
+            "item_code": 304,
+            "item_name": "대형 채굴용 폭탄",
+            "frame_name": "Extra Bomb.png",
+            "item_type": 2,
+            "item_cool": 20
+        }
+    ]
+}

@@ -39,4 +39,6 @@ void ServiceLocator::Save()
 
     Get<IInventoryService>()->Save();
     Get<ISettingService>()->Save();
+
+    AXLOGD("Service Locator: 성공적으로 서비스들에 정보를 저장했습니다.");
 }

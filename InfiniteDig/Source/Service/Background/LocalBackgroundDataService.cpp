@@ -26,20 +26,13 @@ namespace Service
 
         m_data_vector.clear();
 
-        string file_path      = ax::FileUtils::getInstance()->getWritablePath() + "BackgroundData.json";
+        string file_path      = "Data/BackgroundData.json";
         string json_str       = ax::FileUtils::getInstance()->getStringFromFile(file_path);
-
-        AXASSERT(!json_str.empty(), "BackgroundData.json 로드에 실패했습니다.");
 
         Document doc;
         doc.Parse(json_str.c_str());
 
-        AXASSERT(doc.IsObject(), "BackgroundData.json의 형식이 잘못되었습니다.");
-        AXASSERT(doc.HasMember("backgrounds"), "BackgroundData.json의 형식이 잘못되었습니다.");
-
         const Value& blocks = doc["backgrounds"];
-        AXASSERT(blocks.IsArray(), "backgrounds는 배열이 아닙니다.");
-
         const Value& bg_array = doc["backgrounds"];
 
         for (rapidjson::SizeType i = 0; i < bg_array.Size(); i++)

@@ -31,19 +31,13 @@ namespace Service
 
         m_block_map.clear();
 
-        string file_path = ax::FileUtils::getInstance()->getWritablePath() + "BlockData.json";
+        string file_path = "Data/BlockData.json";
         string json_str  = ax::FileUtils::getInstance()->getStringFromFile(file_path);
-
-        AXASSERT(!json_str.empty(), "BlockData.json 로드에 실패했습니다.");
 
         Document doc;
         doc.Parse(json_str.c_str());
 
-        AXASSERT(doc.IsObject(), "BlockData.json의 형식이 잘못되었습니다.");
-        AXASSERT(doc.HasMember("blocks"), "BlockData.json의 형식이 잘못되었습니다.");
-
         const Value& blocks = doc["blocks"];
-        AXASSERT(blocks.IsArray(), "blocks는 배열이 아닙니다.");
 
         for (const auto& block : blocks.GetArray())
         {

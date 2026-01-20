@@ -44,14 +44,10 @@ using namespace ax;
 static ax::Size designResolutionSize = ax::Size(360, 640);
 
 AppDelegate::AppDelegate()
-{
-    ServiceLocator::Initialize();
-}
+{}
 
 AppDelegate::~AppDelegate()
-{
-    ServiceLocator::Save();
-}
+{}
 
 // if you want a different context, modify the value of contextAttrs
 // it will affect all platforms
@@ -107,6 +103,14 @@ bool AppDelegate::applicationDidFinishLaunching()
     renderView->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height,
                                         ResolutionPolicy::SHOW_ALL);
 
+    auto fileUtils = FileUtils::getInstance();
+    std::vector<std::string> searchPaths;
+    searchPaths.push_back("Data");
+    searchPaths.push_back("shaders");
+    fileUtils->setSearchPaths(searchPaths);
+
+    ServiceLocator::Initialize();
+
     auto scene = utils::createInstance<Title>();
     director->runWithScene(scene);
 
@@ -128,6 +132,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 // This function will be called when the app is inactive. Note, when receiving a phone call it is invoked.
 void AppDelegate::applicationDidEnterBackground()
 {
+    ServiceLocator::Save();
     Director::getInstance()->stopAnimation();
 
 #if USE_AUDIO_ENGINE

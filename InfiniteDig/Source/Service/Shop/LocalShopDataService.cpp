@@ -32,15 +32,11 @@ namespace Service
 
         m_item_map.clear();
 
-        std::string file_path = ax::FileUtils::getInstance()->getWritablePath() + "ShopData.json";
+        std::string file_path = "Data/ShopData.json";
         std::string json_str  = ax::FileUtils::getInstance()->getStringFromFile(file_path);
-        AXASSERT(!json_str.empty(), "ShopData.json을 불러오는 데 실패했습니다.");
 
         Document doc;
         doc.Parse(json_str.c_str());
-
-        AXASSERT(doc.IsObject(), "ShopData.json의 형식이 잘못되었습니다.");
-        AXASSERT(doc.HasMember("items") && doc["items"].IsArray(), "ShopData.json은 배열이 아닙니다.");
 
         const auto& items = doc["items"];
 

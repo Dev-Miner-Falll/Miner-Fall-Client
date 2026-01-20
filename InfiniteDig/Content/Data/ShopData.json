@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "item_code": 301,
+            "item_name": "소형 다이너마이트",
+            "item_desc": "2칸 반경 내 폭파",
+            "item_cost": 10
+        },
+        {
+            "item_code": 302,
+            "item_name": "중형 다이너마이트",
+            "item_desc": "3칸 반경 내 폭파",
+            "item_cost": 15
+        },
+        {
+            "item_code": 303,
+            "item_name": "중형 채굴용 폭탄",
+            "item_desc": "4칸 반경 내 폭파",
+            "item_cost": 25
+        },
+        {
+            "item_code": 304,
+            "item_name": "대형 채굴용 폭탄",
+            "item_desc": "5칸 반경 내 폭파",
+            "item_cost": 40
+        }
+    ]
+}

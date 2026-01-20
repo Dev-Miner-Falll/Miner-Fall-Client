@@ -1,0 +1,114 @@
+{
+    "blocks": [
+        {
+            "block_type": 0,
+            "item_code": 0,
+            "frame_name": "Bedrock.png",
+            "item_frame_name": "NONE",
+            "break_time": 0,
+            "min_depth": 0,
+            "max_depth": 0,
+            "weight": 0,
+            "breakable": false
+        },
+        {
+            "block_type": 1,
+            "item_code": 0,
+            "frame_name": "Grass Dirt.png",
+            "item_frame_name": "NONE",
+            "break_time": 0.05,
+            "min_depth": 0,
+            "max_depth": 0,
+            "weight": 100,
+            "breakable": true
+        },
+        {
+            "block_type": 2,
+            "item_code": 0,
+            "frame_name": "Dirt.png",
+            "item_frame_name": "NONE",
+            "break_time": 0.05,
+            "min_depth": 1,
+            "max_depth": 29,
+            "weight": 100,
+            "breakable": true
+        },
+        {
+            "block_type": 3,
+            "item_code": 0,
+            "frame_name": "Stone.png",
+            "item_frame_name": "NONE",
+            "break_time": 0.05,
+            "min_depth": 30,
+            "max_depth": -1,
+            "weight": 100,
+            "breakable": true
+        },
+        {
+            "block_type": 4,
+            "item_code": 1,
+            "frame_name": "Coal.png",
+            "item_frame_name": "Coal Stuff.png",
+            "break_time": 0.1,
+            "min_depth": 30,
+            "max_depth": -1,
+            "weight": 30,
+            "breakable": true
+        },
+        {
+            "block_type": 5,
+            "item_code": 2,
+            "frame_name": "Iron.png",
+            "item_frame_name": "Iron Stuff.png",
+            "break_time": 0.25,
+            "min_depth": 300,
+            "max_depth": -1,
+            "weight": 15,
+            "breakable": true
+        },
+        {
+            "block_type": 6,
+            "item_code": 3,
+            "frame_name": "Gold.png",
+            "item_frame_name": "Gold Stuff.png",
+            "break_time": 0.5,
+            "min_depth": 1000,
+            "max_depth": -1,
+            "weight": 10,
+            "breakable": true
+        },
+        {
+            "block_type": 7,
+            "item_code": 4,
+            "frame_name": "Emerald.png",
+            "item_frame_name": "Emerald Stuff.png",
+            "break_time": 0.5,
+            "min_depth": 5000,
+            "max_depth": -1,
+            "weight": 3,
+            "breakable": true
+        },
+        {
+            "block_type": 8,
+            "item_code": 5,
+            "frame_name": "Amethyst.png",
+            "item_frame_name": "Amethyst Stuff.png",
+            "break_time": 1,
+            "min_depth": 5000,
+            "max_depth": -1,
+            "weight": 3,
+            "breakable": true
+        },
+        {
+            "block_type": 9,
+            "item_code": 6,
+            "frame_name": "Diamond.png",
+            "item_frame_name": "Diamond Stuff.png",
+            "break_time": 1,
+            "min_depth": 10000,
+            "max_depth": -1,
+            "weight": 1,
+            "breakable": true
+        }
+    ]
+}

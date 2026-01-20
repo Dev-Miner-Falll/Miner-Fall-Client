@@ -22,7 +22,7 @@ bool Pickaxe::init(ChunckManager* chunck_manager)
 
     m_chunck_manager = chunck_manager;
 
-    auto sprite = Sprite::create("Game/Object/pickaxes.png", Rect(0, 0, 32, 32));
+    auto sprite = Sprite::create("Game/Object/Pickaxes.png", Rect(0, 0, 32, 32));
     sprite->setAnchorPoint(Vec2(0.5f, 0.5f));
     this->addChild(sprite);
 
